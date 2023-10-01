@@ -1,7 +1,7 @@
 import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Button, Dropdown, message, Space, Tag } from "antd";
+import { Button, Dropdown, Space, Tag } from "antd";
 import "../styles/CustomDropDown.css";
 
 const generateMenuItem = (label: string, key: string, count: number) => ({
@@ -11,7 +11,12 @@ const generateMenuItem = (label: string, key: string, count: number) => ({
   itemIcon: <Tag className="dropdown-tag">{count}</Tag>,
 });
 
-const items: MenuProps["items"] = [
+const items: {
+  label: string;
+  key: string;
+  className: string;
+  itemIcon: React.ReactNode;
+}[] = [
   generateMenuItem("Applied", "1", 1745),
   generateMenuItem("Shortlisted", "2", 453),
   generateMenuItem("Technical Interview", "3", 123),
@@ -24,13 +29,15 @@ const items: MenuProps["items"] = [
 ];
 
 function CustomDropDown(): React.ReactElement {
-  const [selected, setSelected] = React.useState<string>(items[3].label);
+  const [selected, setSelected] = React.useState<any>(items?.[3]?.label);
 
   const handleMenuClick: MenuProps["onClick"] = (e) => {
     console.log("click", e);
-    const selectedItem = items.find((item) => item.key === e.key);
-    if (selectedItem) {
-      setSelected(selectedItem.label);
+    if (items) {
+      const selectedItem = items.find((item) => item?.key === e.key); // Use optional chaining here
+      if (selectedItem) {
+        setSelected(selectedItem.label);
+      }
     }
   };
   const menuProps = {

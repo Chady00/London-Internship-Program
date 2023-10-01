@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Input } from "antd";
 // import type { SearchProps } from "../Search";
 import "../styles/JobSearchFilter.css";
-import { SearchIcon } from "../assets/SearchIcon";
 import { SearchOutlined } from "@ant-design/icons";
 import type { UserItem } from "../assets/Data/UserItem";
 
