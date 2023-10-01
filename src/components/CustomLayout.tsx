@@ -55,7 +55,7 @@ const CustomLayout: React.FC = () => {
     token: { colorBgContainer },
   } = theme.useToken();
 
-  const [data, setData] = useState(UserData);
+  const data = UserData;
   const [filteredData, setFilteredData] = useState(UserData);
 
   // receive filtered data from job search filter
