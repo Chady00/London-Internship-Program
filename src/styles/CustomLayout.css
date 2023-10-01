@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.menu-vertical {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+}
+
+.sider-vertical {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  color: black;
+}
+ul.ant-menu-root li.ant-menu-item {
+  margin-bottom: 20px !important;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #e9efff;
+  color: #1d4ed8;
+}
+.ant-layout-sider-trigger {
+  background-color: #fdfdfd;
+  color: white;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #e9efff;
+  color: #4f0fbe;
+}
+
+/************************      Header Style         *****************************/
+.header-menu {
+  color: #1d4ed8;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.col-header-item-london {
+  color: #1d4ed8;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.col-header-item {
+  color: #1d4ed8;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.london-text {
+  color: #0b0b0b;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: normal;
+  position: absolute;
+  margin-top: -8px;
+}
+/************************      Header Style  - Buttons         *****************************/
+/************************      Header Style  - Buttons         *****************************/
+/************************      Header Style  - Buttons         *****************************/
+.header-content {
+  display: flex;
+  flex-direction: row;
+  width: 101%;
+}
+.left-header {
+  flex: 1; /* Takes up 33% of the width */
+}
+.middle-header {
+  flex: 1; /* Takes up 66% of the width */
+  float: left;
+}
+.right-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: 109px;
+}
+
+/************************      Header Style  - Buttons         *****************************/
+/************************      Header Style  - Buttons         *****************************/
+.btn-header-item {
+  background-color: white;
+  color: black;
+  margin-right: 8px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 25px 0px rgba(141, 141, 141, 0.05);
+}
+
+.btn-header-item:hover {
+  background-color: #edf2ff !important;
+  border: 1px solid #e0e0e0;
+}
+.ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-compact-item.ant-btn-compact-first-item {
+  background-color: #1d5ecd;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-radius: 8px 0px 0px 8px;
+}
+.ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-icon-only.ant-btn-compact-item.ant-btn-compact-last-item.ant-dropdown-trigger {
+  background-color: #1d5ecd;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+  margin-top: -5px;
+  border-left: 2px solid #ffffff;
+}
+
+/************************      Header Media Queries        *****************************/
+@media (max-width: 1840px) {
+  .ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-compact-item.ant-btn-compact-first-item {
+    width: 100%;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .left-header {
+    flex-grow: 1;
+  }
+  .middle-header {
+    flex-grow: 0.8;
+  }
+  .right-header {
+    flex-grow: 1.2;
+  }
+}
+
+@media (max-width: 1700px) {
+  /* Increase the font size of the left-header and right-header to fit all items on the same line */
+  .left-header,
+  .right-header {
+    font-size: 16px;
+  }
+
+  /* Adjust flex properties to ensure items stay on the same line */
+  .left-header,
+  .middle-header,
+  .right-header {
+    flex-grow: 1;
+  }
+  .header-right-dropdown {
+    width: 130px;
+  }
+  .ant-space-item {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1470px) {
+  .header-right-dropdown {
+    max-width: 115px;
+  }
+}
+@media (max-width: 1370px) {
+  .header-right-dropdown {
+    display: none;
+  }
+  .ant-space-item {
+    width: 16%;
+    margin-left: 6px;
+  }
+}
+@media (max-width: 1270px) {
+  .left-header {
+    flex: 1;
+  }
+  .middle-header {
+    flex: 2.4;
+  }
+  .right-header {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn-header-item {
+    display: none;
+  }
+
+  .left-header {
+    font-size: 15px;
+    flex: 1;
+  }
+
+  .right-header {
+    flex: 0;
+  }
+}
+@media (max-width: 990px) {
+  .left-header {
+    display: none;
+    flex: 0;
+  }
+  .left-side {
+    display: none;
+    flex: 0;
+  }
+  .middle-header {
+    flex: 1;
+  }
+}
+
+/************************                                  *****************************/
+/************************      Body Content Style          *****************************/
+
+.body-content {
+  background-color: #f9faff;
+}
+.ant-layout.css-dev-only-do-not-override-pr0fja {
+  background-color: #f9faff;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Row direction */
+}
+
+/* Style for the left side */
+.left-side {
+  flex: 1; /* Takes up 33% of the width */
+  background-color: #f9faff; /* Add your desired background color */
+  height: auto;
+}
+
+/* Style for the right side */
+.right-side {
+  flex: 1.94; /* Takes up 66% of the width */
+  background-color: #f9faff; /* Add your desired background color */
+  margin-right: 103px;
+  height: auto;
+}
+
+/************************************************************/
+
+.ant-layout-sider-collapsed .ant-layout-sider-trigger {
+  color: black;
+  background-color: white;
+}
+.ant-menu-item.ant-menu-item-selected {
+  display: flex;
+}
+.ant-menu-item.ant-menu-item-selected .anticon {
+  margin-left: -4px;
+  margin-top: 4px;
+}

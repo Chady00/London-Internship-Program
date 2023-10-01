@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+.custom-dropdown {
+  display: flex;
+  width: 321px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(29, 78, 216, 0.05);
+  border: none;
+  border-radius: 16px;
+}
+
+.custom-dropdown {
+  /* Your other styles here */
+  color: #1d4ed8;
+  font-family: "Poppins", sans-serif; /* Keep this line */
+  font-weight: 500; /* Adjust the font weight to 200 or any other desired value */
+  border-radius: 16px;
+  font-size: 16px;
+}
+.custom-dropdown:focus {
+  border-radius: 16px 16px 0px 6px;
+}
+.custom-dropdown:hover {
+  border-radius: 16px 16px 0px 6px;
+}
+
+.ant-dropdown-menu-item.ant-dropdown-menu-item-only-child {
+  /* Add any specific styles to the menu item */
+  border-bottom: 1px solid #f8f6f6;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Change the style of the <span> element inside each menu item */
+.ant-dropdown-menu-title-content {
+  display: flex;
+
+  height: 62px;
+  padding: 8px 16px;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: none;
+  border-radius: 0 0 16px 16px;
+}
+.ant-dropdown-menu-title-content:hover {
+  color: #1d4ed8;
+  border-radius: 0;
+  font-weight: 500;
+}
+.ant-dropdown-menu-item.ant-dropdown-menu-item-active.ant-dropdown-menu-item-only-child:hover {
+  background-color: #edf2ff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0;
+}
+.ant-dropdown-menu-item.ant-dropdown-menu-item-active.ant-dropdown-menu-item-only-child:hover
+  .dropdown-tag {
+  background-color: #d1ddff;
+}
+.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light.css-dev-only-do-not-override-pr0fja {
+  padding: 0;
+  border-radius: 0 0 16px 16px;
+}
+.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light.css-dev-only-do-not-override-pr0fja:hover {
+  padding: 0;
+  border-radius: 0 0 16px 16px;
+}
+.custom-menu-item {
+  font-size: 16px !important; /* Adjust the font size as needed */
+  font-weight: 400 !important; /* Adjust the font weight as needed */
+  font-family: "Poppins", sans-serif !important;
+}
+
+.dropdown-tag {
+  padding: 2px 10px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 16px;
+  background-color: #f8f8f8;
+  margin-left: 8px;
+}
+
+/************************      DropDown MediaQueries         *****************************/
+
+@media (max-width: 1260px) {
+  .custom-dropdown {
+    min-width: 900%;
+  }
+}
+@media (max-width: 1160px) {
+  .custom-dropdown {
+    min-width: 900%;
+    margin-left: auto;
+  }
+}
+@media (max-width: 970px) {
+  .custom-dropdown {
+    margin-left: -15px;
+  }
+}
+@media (max-width: 730px) {
+  .custom-dropdown {
+    min-width: 400%;
+  }
+}
+@media (max-width: 455px) {
+  .custom-dropdown {
+    max-width: 500%;
+  }
+}
