@@ -90,7 +90,7 @@ const CustomLayout: React.FC = () => {
           className="menu-vertical"
         />
       </Sider>
-      <Layout>
+      <Layout style={{ backgroundColor: "#f9faff" }}>
         <Header
           style={{ background: "#f9faff", paddingBottom: "90px" }}
           className="header-menu"
