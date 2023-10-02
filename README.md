@@ -5,7 +5,7 @@
     This task is fully implemented using Vite + Typescript ( ReactJs), in addition to yml file configuration.  
     Ant Design system was utilized to develop this UI.  
     Local Search is implemented to the candidate data.
-*   Task is deployed via github actions and netlify.
+*   Task is deployed via github actions and vercel.
 
 
 
