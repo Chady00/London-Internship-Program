@@ -104,7 +104,7 @@ ul.ant-menu-root li.ant-menu-item {
   background-color: #edf2ff !important;
   border: 1px solid #e0e0e0;
 }
-.ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-compact-item.ant-btn-compact-first-item {
+.dropdown-btn > .ant-btn {
   background-color: #1d5ecd;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -112,21 +112,33 @@ ul.ant-menu-root li.ant-menu-item {
   margin-top: -5px;
   margin-left: 5px;
   border-radius: 8px 0px 0px 8px;
+  border-right: none;
 }
-.ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-icon-only.ant-btn-compact-item.ant-btn-compact-last-item.ant-dropdown-trigger {
+
+.dropdown-btn > .ant-btn > span {
   background-color: #1d5ecd;
   color: white;
   font-family: "Poppins", sans-serif;
-  height: 40px;
+
   margin-top: -5px;
-  border-left: 2px solid #ffffff;
+  margin-left: 5px;
+  border-radius: 8px 0px 0px 8px;
+}
+.dropdown-btn > .ant-dropdown-trigger {
+  background-color: #1d5ecd;
+  border-radius: 0px 8px 8px 0px !important;
+  margin-left: 2px;
+  display: flex; /* Add display: flex */
+  align-items: center; /* Add align-items: center */
 }
 
+.dropdown-btn > .ant-dropdown-trigger > span {
+  background-color: #1d5ecd !important;
+  margin-left: 10px;
+  margin-top: 1px;
+}
 /************************      Header Media Queries        *****************************/
 @media (max-width: 1840px) {
-  .ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-default.ant-btn-compact-item.ant-btn-compact-first-item {
-    width: 100%;
-  }
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -146,6 +158,25 @@ ul.ant-menu-root li.ant-menu-item {
 
 @media (max-width: 1700px) {
   /* Increase the font size of the left-header and right-header to fit all items on the same line */
+
+  .dropdown-btn > .ant-btn {
+    width: 260px;
+    max-height: 38px;
+    text-overflow: ellipsis;
+  }
+  .dropdown-btn > .ant-btn > span {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px;
+  }
+  .dropdown-btn > .ant-dropdown-trigger {
+    width: 30px;
+  }
+  .dropdown-btn > .ant-dropdown-trigger > span {
+    width: 40%;
+    margin-bottom: 4px;
+  }
   .left-header,
   .right-header {
     font-size: 16px;
@@ -166,8 +197,13 @@ ul.ant-menu-root li.ant-menu-item {
 }
 
 @media (max-width: 1470px) {
-  .header-right-dropdown {
-    max-width: 115px;
+  .dropdown-btn > .ant-btn {
+    display: none;
+  }
+
+  .ant-space-item {
+    width: 16%;
+    margin-left: 6px;
   }
 }
 @media (max-width: 1370px) {

@@ -138,7 +138,7 @@ const CustomLayout: React.FC = () => {
                 <Dropdown.Button
                   icon={<DownOutlined />}
                   menu={{ items }}
-                  className="header-right-dropdown"
+                  className="dropdown-btn"
                 >
                   Move to video Interview I
                 </Dropdown.Button>
