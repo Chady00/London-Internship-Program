@@ -30,7 +30,7 @@
 
 ## Getting Started
 
-### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/Chady00/London-Internship-Program
@@ -42,7 +42,8 @@ npm install
 #Start the Development Server:
 npm run dev
 ```
-### Deployment:
+
+## Deployment:
 The project is deployed and accessible online. You can view it live on github pages or Vercel.
 ![image](https://github.com/Chady00/London-Internship-Program/assets/84717550/9a4833e0-50ee-4598-b09c-00609121e0a2)
 
