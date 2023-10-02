@@ -45,7 +45,7 @@ npm run dev
 
 ## Deployment:
 The project is deployed and accessible online. You can view it live on github pages or Vercel.
-![image](https://github.com/Chady00/London-Internship-Program/assets/84717550/9a4833e0-50ee-4598-b09c-00609121e0a2)
+![image](https://github.com/Chady00/London-Internship-Program/assets/84717550/c6fe17f9-e0ed-454e-9988-83e539daa230)
 
 ## Repository
 Find the complete source code and project files in this GitHub repository: [GitHub Repo Link](https://github.com/Chady00/London-Internship-Program)https://github.com/Chady00/London-Internship-Program
