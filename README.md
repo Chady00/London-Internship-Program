@@ -1,3 +1,9 @@
+## update-2:
+The application was fully dockerized by adding docker, .dockerignore files.
+Container name : london-internship-program
+Version : latest
+Port Mapped : 8080
+
 ## London Internship Program
 
 *   Purpose of this task is to assess your UI skills and the attention to detail to the task-  
